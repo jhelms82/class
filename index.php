@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors',1);
+error_reporting(E_ALL);
     // Model 
     require('model/database.php');
     require('model/vehicle_db.php');
@@ -54,6 +56,7 @@ $classes = ClassDB::get_classes();
     }
 
     include('view/vehicle_list.php');
+        
         
     
 
